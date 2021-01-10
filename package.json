@@ -6,7 +6,9 @@
   "scripts": {
     "client::build": "webpack",
     "server::build": "tsc --project tsconfig.server.json",
-    "client::dev": "webpack --watch"
+    "client::dev": "webpack --watch",
+    "server::dev": "nodemon",
+    "start": "bash run.sh"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,9 @@
   "homepage": "",
   "dependencies": {},
   "devDependencies": {
+    "nodemon": "^2.0.7",
     "ts-loader": "^8.0.14",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.3",
     "webpack": "^4",
     "webpack-cli": "^4.3.1"

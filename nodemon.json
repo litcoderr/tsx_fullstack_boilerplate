@@ -1,3 +1,6 @@
 {
-    "ignore": ["client", "node_modules"]
+    "watch": ["./server/**/*.ts"],
+    "ignore": ["./client/**/*"],
+    "exec": "ts-node --project ./tsconfig.server.json ./server/index.ts",
+    "ext": "ts"
 }
