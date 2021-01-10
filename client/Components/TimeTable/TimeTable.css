@@ -1,0 +1,78 @@
+.timetable-container,
+.timetable,
+.timetable-header,
+td,
+tr {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    table-layout: fixed;
+}
+
+.time-name {
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.timetable-container {
+    border: 2px solid black;
+}
+
+.timetable {
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.timetable-header {
+    border-bottom: 1px dashed black;
+    font-size: 1.6em;
+}
+
+.timetable-header td {
+    border-spacing: 0;
+    padding-left: 5px;
+}
+
+.cell-button {
+    display:inline-block;
+    width:100%;
+    height:100%;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.data,
+.empty-slot,
+.week-name {
+    text-align: center;
+    height:30px;
+}
+
+.week-name {
+    font-size: 0.8em;
+}
+
+.data {
+    font-size: 0.8em;
+}
+
+.data {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.timetable-weekcontroller {
+    text-align: center;
+}
