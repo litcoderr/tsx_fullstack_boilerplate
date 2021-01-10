@@ -1,50 +1,24 @@
-const path = require("path");
-const webpack = require('webpack');
-
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-const htmlPlugin = new HtmlWebPackPlugin({
-  template: "./client/index.html", 
-  filename: "./index.html"
-});
+const path = require('path');
 
 module.exports = {
-    entry: path.join(__dirname, "client", "index.js"),
+    entry: path.resolve(__dirname, 'client') + '/index.ts',
     module: {
-        rules: [
-          {
-            test: /\.(js|jsx)$/,
-            exclude: /node_modules/,
-            use: {
-              loader: "babel-loader"
-            }
-          },
-          {
-            test: /\.s?css$/,
-            use: ['style-loader', 'css-loader', 'sass-loader']
-          },
-          {
-            test: /\.(png|svg|jpg|gif)$/,
-            loader: "file-loader",
-            options: { name: '/static/[name].[ext]' }
-          }
-        ]
+        rules: [{
+            test: /\.tsx?$/,
+            use: [{
+                loader: 'ts-loader',
+                options: {
+                    configFile: "tsconfig.client.json"
+                }
+            }],
+            exclude: ['/node_modules/', '/server']
+        }],
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx']
+        extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
-        path: path.join(__dirname, "client_dist"),
-        filename: "bundle.js",
-        publicPath: "/",
-        hotUpdateChunkFilename: 'hot/hot-update.js',
-        hotUpdateMainFilename: 'hot/hot-update.json'
-    }, 
-    plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        htmlPlugin
-    ],
-    devServer: {
-        hot: true,
-        historyApiFallback: true
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'client', 'dist'),
     }
 };

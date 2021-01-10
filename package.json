@@ -1,72 +1,29 @@
 {
-  "name": "babyak",
+  "name": "boiler_plate",
   "version": "1.0.0",
-  "description": "swag developers repository",
-  "main": "index.js",
+  "description": "boiler plating",
+  "main": "",
   "scripts": {
-    "server::start": "nodemon --exec babel-node ./server/app.js -d server_dist",
-    "server::build": "./node_modules/.bin/babel server -d server_dist",
-    "client::watch": "webpack --mode development --watch",
-    "client::build": "webpack --mode production",
-    "start": "npm run client::build && npm run server::build && node ./server_dist/app.js",
-    "test": "NODE_ENV=test jest"
+    "client::build": "webpack",
+    "server::build": "tsc --project tsconfig.server.json",
+    "client::dev": "webpack --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/litcoderr/swag.dev.git"
+    "url": "some-repo-url"
   },
   "keywords": [],
   "author": "",
   "license": "",
   "bugs": {
-    "url": "https://github.com/litcoderr/swag.dev/issues"
+    "url": "some-bug-report-url"
   },
-  "homepage": "https://github.com/litcoderr/swag.dev#readme",
-  "dependencies": {
-    "@material-ui/core": "^4.9.4",
-    "@material-ui/icons": "^4.9.1",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.3",
-    "query-string": "^6.11.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-redux": "^7.2.0",
-    "react-router": "^5.1.2",
-    "react-router-dom": "^5.1.2",
-    "react-test-renderer": "^16.13.0",
-    "react-timetable-events": "^1.0.2",
-    "redux": "^4.0.5",
-    "start-server-and-test": "^1.10.8",
-    "typeface-roboto": "0.0.75",
-    "uuid": "^7.0.1"
-  },
+  "homepage": "",
+  "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/node": "^7.8.4",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "codecov": "^3.6.5",
-    "css-loader": "^3.4.2",
-    "date-fns": "^2.10.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "html-webpack-plugin": "^3.2.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^25.1.0",
-    "node-sass": "^4.13.1",
-    "nodemon": "^2.0.2",
-    "regenerator-runtime": "^0.13.3",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.1.3",
-    "supertest": "^4.0.2",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "ts-loader": "^8.0.14",
+    "typescript": "^4.1.3",
+    "webpack": "^4",
+    "webpack-cli": "^4.3.1"
   }
 }
