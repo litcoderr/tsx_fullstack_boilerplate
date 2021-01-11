@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: path.resolve(__dirname, 'client') + '/index.ts',
+    entry: path.resolve(__dirname, 'client') + '/index.tsx',
     module: {
         rules: [{
             test: /\.tsx?$/,

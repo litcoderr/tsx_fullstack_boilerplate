@@ -2,7 +2,8 @@
     "compilerOptions": {
       "outDir": "./client/dist/",
       "noImplicitAny": true,
-      "module": "es6",
+      "module": "commonjs",
+      "esModuleInterop": true,
       "target": "es5",
       "jsx": "react"
     },

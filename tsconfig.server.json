@@ -3,7 +3,8 @@
     "compilerOptions": {
       "outDir": "./server/dist/",
       "noImplicitAny": true,
-      "module": "es6",
+      "module": "commonjs",
+      "esModuleInterop": true,
       "target": "es5"
     },
     "exclude": ["./client", "./server/dist"]
