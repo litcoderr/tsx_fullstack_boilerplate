@@ -1,6 +1,6 @@
 {
     "watch": ["./server/**/*.ts"],
     "ignore": ["./client/**/*"],
-    "exec": "ts-node --project ./tsconfig.server.json ./server/index.ts",
+    "exec": "npm run server::build; node ./server/dist/index.js",
     "ext": "ts"
 }

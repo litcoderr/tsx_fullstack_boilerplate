@@ -1,4 +1,3 @@
-
 {
     "compilerOptions": {
       "outDir": "./server/dist/",
