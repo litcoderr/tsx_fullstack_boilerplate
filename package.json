@@ -6,7 +6,7 @@
   "scripts": {
     "client::build": "webpack",
     "server::build": "tsc --project tsconfig.server.json",
-    "client::dev": "webpack --watch",
+    "client::dev": "webpack --watch --mode development",
     "server::dev": "nodemon",
     "start": "bash run.sh"
   },
@@ -22,20 +22,24 @@
   },
   "homepage": "",
   "dependencies": {
+    "@react-three/fiber": "^7.0.1",
     "express": "^4.17.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "three": "^0.129.0"
   },
   "devDependencies": {
-    "@types/express": "^4.17.9",
-    "@types/node": "^14.14.20",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/express": "^4.17.12",
+    "@types/node": "^14.17.4",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "css-loader": "^5.2.6",
     "nodemon": "^2.0.7",
-    "ts-loader": "^8.0.14",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.3.0",
     "ts-node": "^9.1.1",
-    "typescript": "^4.1.3",
-    "webpack": "^4",
-    "webpack-cli": "^4.3.1"
+    "typescript": "^4.3.4",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.7.2"
   }
 }
