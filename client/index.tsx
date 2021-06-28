@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useRef} from "react";
 import ReactDOM from "react-dom";
-import {Canvas} from "@react-three/fiber";
+import {Canvas, useThree} from "@react-three/fiber";
 
 import "./style.css";
-import Box from "./box";
+import Globe from "./componenets/globe";
+import CameraController from "./camera";
 
 type MainProps = {
     loginState: boolean
@@ -12,11 +13,12 @@ type MainProps = {
 function MainComponent(props: MainProps) {
     return (
         <Canvas>
+            <CameraController></CameraController>
             <ambientLight></ambientLight>
-            <Box position={[0, 0, 0]}></Box>
+            <pointLight position={[10, 5, 0]}></pointLight>
+            <Globe position={[0, 0, 0]}></Globe>
         </Canvas>
     )
 }
 
 ReactDOM.render(<MainComponent loginState={true}></MainComponent>, document.getElementById('root'));
-
