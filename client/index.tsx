@@ -8,8 +8,6 @@ type MainProps = {
     loginState: boolean
 }
 
-// TODO use plain threejs instead
-
 function MainComponent(props: MainProps) {
     return (
         <Viewer></Viewer>
