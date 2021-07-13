@@ -1,4 +1,4 @@
-# Typescript Based FullStack Boilerplate
+# Typescript based FullStack Boilerplate
 
 Ever get tired of setting up solid typescript-react-expressjs project environment? Here is an awesome boilerplate that you can use to implement your exciting idea on the go. Save your time **RIGHT NOW** !!
 
@@ -17,7 +17,7 @@ For the most easiest integration
 
 2. Copy core code using ```benchmark.bash``` script
     ```bash
-    cd tsx_frontend_backend_boilerplate
+    cd tsx_fullstack_boilerplate
 
     bash benchmark.bash ~/projects/my_sexy_project
     ```
