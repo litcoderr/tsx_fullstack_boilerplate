@@ -1,4 +1,17 @@
-import React from "react";
+import React, {useRef} from "react";
 import ReactDOM from "react-dom";
+import Viewer from "./viewer";
 
-ReactDOM.render(<>Hello World</>, document.getElementById('root'));
+import "./style.css";
+
+type MainProps = {
+    loginState: boolean
+}
+
+function MainComponent(props: MainProps) {
+    return (
+        <Viewer></Viewer>
+    )
+}
+
+ReactDOM.render(<MainComponent loginState={true}></MainComponent>, document.getElementById('root'));

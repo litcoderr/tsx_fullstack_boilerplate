@@ -12,13 +12,18 @@ module.exports = {
                 }
             }],
             exclude: ['/node_modules/', '/server']
+        },
+        {
+            test: /\.css$/i,
+            exclude: ['/node_modules/', '/server'],
+            use: ["style-loader", "css-loader"]
         }],
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
+        extensions: ['.tsx', '.ts', '.js', 'css'],
     },
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'client', 'dist'),
-    }
+    },
 };
