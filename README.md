@@ -15,11 +15,11 @@ For the most easiest integration
     git clone ~/projects/my_sexy_project
     ```
 
-2. Copy core code using ```benchmark.bash``` script
+2. Copy core code using ```integrate.bash``` script
     ```bash
     cd tsx_fullstack_boilerplate
 
-    bash benchmark.bash ~/projects/my_sexy_project
+    bash integrate.bash ~/projects/my_sexy_project
     ```
 
 3. All set!!
