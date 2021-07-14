@@ -12,11 +12,14 @@ For the most easiest integration
 
 1. Clone your new project repository from remote server
     ```bash
-    git clone ~/projects/my_sexy_project
+	cd ~/projects
+    git clone https://github.com/your_user_name/my_sexy_project.git
     ```
 
 2. Copy core code using ```integrate.bash``` script
     ```bash
+	cd ~/projects
+	git clone https://github.com/litcoderr/tsx_fullstack_boilerplate.git
     cd tsx_fullstack_boilerplate
 
     bash integrate.bash ~/projects/my_sexy_project
