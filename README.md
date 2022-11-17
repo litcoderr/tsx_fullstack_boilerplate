@@ -13,7 +13,7 @@ For the most easiest integration
 1. Clone your new project repository from remote server
     ```bash
 	cd ~/projects
-    git clone https://github.com/your_user_name/my_sexy_project.git
+    git clone https://github.com/your_user_name/my_project.git
     ```
 
 2. Copy core code using ```integrate.bash``` script
@@ -22,7 +22,7 @@ For the most easiest integration
 	git clone https://github.com/litcoderr/tsx_fullstack_boilerplate.git
     cd tsx_fullstack_boilerplate
 
-    bash integrate.bash ~/projects/my_sexy_project
+    bash integrate.bash ~/projects/my_project
     ```
 
 3. All set!!
