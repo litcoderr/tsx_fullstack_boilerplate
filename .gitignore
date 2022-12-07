@@ -115,3 +115,5 @@ server_dist
 .vscode
 *.swp
 coverage/
+
+package-lock.json
